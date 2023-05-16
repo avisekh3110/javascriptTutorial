@@ -1,0 +1,13 @@
+{
+  //
+  "simpleForLoop": {
+    "scope": "javascript,typescript",
+    "prefix": "sfl",
+    "body": [
+      "for (let i = 0; i < $1.length; i++) {",
+      "\tconsole.log($1[i]);",
+      "};"
+    ],
+    "description": "This is a simple for loop"
+  }
+}
