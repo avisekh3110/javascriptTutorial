@@ -1,5 +1,7 @@
 {
-  //
+  //Learn How to make vsCode snippet at the link below
+  // https://code.visualstudio.com/docs/editor/userdefinedsnippets
+
   "simpleForLoop": {
     "scope": "javascript,typescript",
     "prefix": "sfl",
