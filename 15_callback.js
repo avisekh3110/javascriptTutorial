@@ -1,4 +1,6 @@
-const allVideo = {
+//* JavaScript is a bad reader.It reads the callstack line by line. If the information you wanted is not fetched then it ignores and moves forward.
+//* so we use callback, which send the thing which are not fetched from callstack to web-API(which keep these for thing untill they get there data and then send it back to callstack and reads it.)
+const allVideos = {
   video1: "This is video 1",
   video2: "This is video 2",
   video3: "This is video 3",
@@ -13,17 +15,19 @@ let userLogin1 = (email, password, callback) => {
 let getUserVideo = (email, callback) => {
   setTimeout(() => {
     console.log("we got the videos");
-    callback(Object.keys(allVideo));
+    console.log(email);
+    callback(Object.keys(allVideos));
   }, 2000);
 };
-console.log("Start");
 
 let getvideoDetail = (video, callback) => {
   setTimeout(() => {
     console.log("Title of video " + video + " is: ");
-    callback(allVideo[Object.keys(allVideo)[video - 1]]);
+    callback(allVideos[Object.keys(allVideos)[video - 1]]);
   }, 2000);
 };
+
+console.log("Start");
 
 const user2 = userLogin1("Avidjsfa@gmmail.com", "9022hgks", (user) => {
   console.log(user);
