@@ -1,3 +1,5 @@
+//! CONDITIONAL (if, else if and else)
+
 let a = prompt("Enter Number");
 if (a <= 2) {
   alert("Too Low");

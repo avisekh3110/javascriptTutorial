@@ -1,0 +1,6 @@
+use browser to run to the programs and get output 
+But i would suggest to use node in your VScode terminal.
+
+JSON.strigify ---> used to convert object to string.
+
+JOSN.parse ---> used to convert strigified object back to object.

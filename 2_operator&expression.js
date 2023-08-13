@@ -10,8 +10,9 @@ console.log("a/b", a / b);
 console.log("a**b", a ** b);
 console.log("a%b", a % b);
 console.log("a++", a++); //a++ => first print the value of a and then changes.
-console.log("a", a);
+console.log("a", a)
 console.log("++a", ++a); //++a => first changes the value of a and then print.
+console.log("a", a);                                                                    
 console.log("a--", a--);
 console.log("a", a);
 console.log("--a", --a);

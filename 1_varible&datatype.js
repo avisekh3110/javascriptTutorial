@@ -44,10 +44,10 @@ obj["Chinmay"] = 0;
 console.log(obj);
 
 //! GIVES ALL THE KEYS OF OBJECT
-console.log(Object.keys(obj));
+console.log(Object.keys(obj)); //returns an array of keys
 
 //! GIVE THE GIVE LENGTH OF OBJECT
-console.log(Object.keys(obj).length);
+console.log(Object.keys(obj).length); //returns the length of the array.
 
 //!GIVE THE KEY OF OBJECT USING INDEX
 console.log(Object.keys(obj)[0]);

@@ -1,11 +1,15 @@
 //* STRING
 let name1 = "Avisekh";
-console.log(name1.length); //? this is a property
+console.log(name1.length); //? .length is a property
 
 //? iterating a string
 for (let i = 0; i < name1.length; i++) {
   console.log(name1[i]);
 }
+
+//!checking characters...
+console.log(name1[0] == "M");
+
 name1[0] = "M"; //! this is not possible, Coz string is immutable.
 console.log(name1);
 
@@ -24,7 +28,7 @@ console.log(fruit.length); //? coz \n is one character not two
 //! METHOD OF STRING
 //* these are methods so needs a () at the end.
 
-//* CASE CHANGE
+//* CASE CHANGE -- it doesn't changes the actual value of the variable.
 console.log(name1.toUpperCase()); //? make every character capital
 console.log(name1.toLowerCase()); //? make every character small
 

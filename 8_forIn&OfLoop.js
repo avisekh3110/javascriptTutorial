@@ -1,7 +1,7 @@
 let obj = {
-  a: 1,
-  b: 2,
-  c: 3,
+  fst: 10,
+  scnd: 20,
+  thrd: 30,
 };
 //* for in loop
 // loop through the keys of the object
@@ -15,6 +15,11 @@ for (let a in obj) {
 //! object must be iterable
 for (let b of "AVISEKH") {
   console.log(b);
+}
+
+let arr = [1,2,3,4,5]
+for (let c of arr){
+  console.log(c)
 }
 
 //* forEach loop

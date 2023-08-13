@@ -14,3 +14,5 @@ do {
   console.log(j);
   j++;
 } while (j < 10);
+
+//! do while loop runs altest 1 time [Put i and j as 11 to see].

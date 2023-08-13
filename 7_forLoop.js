@@ -1,4 +1,4 @@
-//! For loop ki kahani
+//! For loop ki kahani {Story}
 for (let i = 0; i < 5; i++) {
   console.log(i); //*give 0 to 4 in console
 }
@@ -12,10 +12,10 @@ statement2 -- give the condition on the basis of which the loop runs
 statement3 -- is executed everytime the loop body is executed, changes the value of varible.
 */
 
-//SAMPLE PROGRAM
+//SAMPLE PROGRAM (sum of first 10 digit number)
 let sum = 0;
 for (let j = 0; j < 10; j++) {
-  sum += j + 1; //?why this(j+1) is used?
+  sum += j ; //?why this(j+1) is used?
 }
 console.log(sum);
 
@@ -31,5 +31,5 @@ for (let i = 0; i < num.length; i++) {
 
 //*Modern way (forEach Loop)
 num.forEach((element) => {
-  console.log(element);
+  console.log(element+1);
 });
