@@ -37,6 +37,9 @@ console.log(name1.toLowerCase()); //? make every character small
 console.log(name1.slice(2, 4)); //? with ending index
 console.log(name1.slice(2)); //? without ending index
 
+const newWord="hi I am Avisekh sabi";
+console.log(newWord.split(" ")) // returns an array of splited elements.
+
 //* REPLACE
 console.log(name1.replace("Avi", "milk"));
 

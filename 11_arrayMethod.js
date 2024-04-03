@@ -74,4 +74,4 @@ console.log(deletedValue); //! will return removed values.
 let numDemo = [1, 7, 5, 1, 2, 8];
 let numSliced = numDemo.slice(2, 5); //!ONLY RETURNS THE SLICED VALUES
 console.log(numSliced);
-console.log(numDemo); //! the value of array 
+console.log(numDemo); //! doesn't change the actual array.

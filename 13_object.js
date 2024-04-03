@@ -24,3 +24,11 @@ console.log(job);
 
 const person2 = { ...person, name: "Yash" };
 console.log(person2);
+
+/* methods 
+
+Object.keys(obj)
+object.value(obj)
+Object.entries(obj)
+Object.assign({},obj,{key:value})
+*/ 

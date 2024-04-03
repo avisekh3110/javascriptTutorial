@@ -1,6 +1,20 @@
+Complier converts the code into 0 and 1 for computer.
+
+Interpreted languages goes line by line, can run partially if th error comes later.
+
+JAVASCRIPT
+-Interpreted languages
+-not strict (Dynamic)
+-single threaded - uses one core at a time.
+
+Date is a class use to get time
+where object can be created using let obj = new Date;
+but Date can also be used Date.now() which give the miliseconds passed from 1 january 1970(EPOC TIMESTAMP).
+here, .now() is a STATIC FUNCTION of date class which can be used directly on the Class.
+
 use browser to run to the programs and get output 
 But i would suggest to use node in your VScode terminal.
 
 JSON.strigify ---> used to convert object to string.
 
-JOSN.parse ---> used to convert strigified object back to object.
+JOSN.parse ---> used to convert strigified object back to object..
