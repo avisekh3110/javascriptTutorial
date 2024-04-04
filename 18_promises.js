@@ -133,7 +133,7 @@ function newAsyncfunc2(){
   });
   return p
 }
-
+// you can also think it as...it replaces the function that is passed to .then()...to the "resolve"'s place.
 newAsyncfunc2().then(function(){
   console.log("Hello World")
 })
