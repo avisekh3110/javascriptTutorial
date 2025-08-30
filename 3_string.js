@@ -1,6 +1,8 @@
-//* STRING
+/* //* STRING
 let name1 = "Avisekh";
-console.log(name1.length); //? .length is a property
+var char = "New";
+console.log(char);
+console.log(name1.length); //? .length is a property  ✔
 
 //? iterating a string
 for (let i = 0; i < name1.length; i++) {
@@ -33,31 +35,33 @@ console.log(name1.toUpperCase()); //? make every character capital
 console.log(name1.toLowerCase()); //? make every character small
 
 //* SLICE SYNTAX
-// console.log(name1.slice(starting_index, ending_index)); //? gives us a slice from the string
-console.log(name1.slice(2, 4)); //? with ending index
-console.log(name1.slice(2)); //? without ending index
+// console.log(name1.slice(starting_index, ending_index + 1)); //? gives us a slice from the string
+console.log(name1.slice(2, 4)); //? with ending index   ✔
+console.log(name1.slice(2)); //? without ending index   ✔
 
-const newWord="hi I am Avisekh sabi";
-console.log(newWord.split(" ")) // returns an array of splited elements.
+const newWord = "hi I am Avisekh sabi. Avisekh sabi is good boy";
+console.log(newWord.split(" ")); // returns an array of splited elements. ✔
 
 //* REPLACE
-console.log(name1.replace("Avi", "milk"));
+console.log(name1.replace("Avi", "milk")); //! ✔
+console.log(name1.replaceAll("Avi", "milk")); //! ✔
 
 //* CONCATINATION
-console.log(name1.concat(` is ${boy2}'s father.`));
+console.log(name1.concat(` is ${boy2}'s father.`)); //! ✔
 
 let girl1 = "      Meena      ";
 console.log(girl1);
 console.log(girl1.trim());
 
 //* CharAt
-console.log(name1.indexOf("i")); //? index of character
-console.log(name1.charAt(2)); //? character at index
-console.log(name1.charCodeAt(2)); //? character code at index
+console.log(name1.indexOf("i")); //? index of character or string  //✔
+console.log(name1.charAt(2)); //? character at index //✔
+console.log(name1.charCodeAt(2)); //? character code at index  //✔
 
 //* INCLUDE
+// .include()
 // SYNTAX
-// Sentence.includes(Word); --> return true or false.
+// Sentence.includes(Word); --> return true or false. ✔
 
 const isPresent = (funcSentence, funcWord) => {
   console.log(
@@ -76,3 +80,34 @@ console.log(isPresent(demoSentence, word));
 const thisWord = "hello world";
 console.log(thisWord.startsWith("hello")); //? returns true or false
 console.log(thisWord.endsWith("world")); //? returns true or false
+ 
+*/
+// panagrams checker function
+// "the cat is very lazy" --> "The Cat Is Very Lazy"
+
+/*
+function capitalize(str) {
+  let list = str.split("");
+  list[0] = list[0].toUpperCase();
+  for (let i = 1; i < str.length; i++) {
+    if (i > 0 && list[i - 1] == " ") {
+      list[i] = list[i].toUpperCase();
+    }
+  }
+  console.log(list.join(""));
+}
+
+capitalize("the cat is very last");
+
+*/
+
+function checkPanagram(str) {
+  let list = str.toUpperCase().split("");
+  const uniqueEle = new Set(list);
+  if (uniqueEle.size == 27) {
+    return true;
+  }
+  return false;
+}
+
+console.log(checkPanagram("Pack my box with five dozen liquor jugs"));

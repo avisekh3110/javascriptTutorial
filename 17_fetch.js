@@ -5,13 +5,9 @@ fetch(url)
     console.log(res);
     return res.json();
   })
-  .then((data) => {
-    console.log("this is data");
-    console.log(data);
-    console.log(data.setup);
-    console.log(data.punchline);
-  })
-  .catch(console.error);
+  .then((res) => {
+    console.log(res);
+  });
 
 /*
 import Axios from "axios";

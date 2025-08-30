@@ -9,7 +9,7 @@ const allVideos = {
 let userLogin1 = (email, password, callback) => {
   setTimeout(() => {
     console.log("we have the data now");
-    callback({ userEmail: email }); //here this object is object is passed as a parameter to callback function.
+    callback({ userEmail: email }); //here this object is passed as a parameter to callback function.
   }, 3000);
 };
 let getUserVideo = (email, callback) => {

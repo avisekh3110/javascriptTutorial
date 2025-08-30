@@ -13,11 +13,23 @@ statement3 -- is executed everytime the loop body is executed, changes the value
 */
 
 //SAMPLE PROGRAM (sum of first 10 digit number)
-let sum = 0;
+let sum1 = 0;
+let sum2 = 0;
+let sum3 = 0;
 for (let j = 0; j < 10; j++) {
-  sum += j ; //?why this(j+1) is used?
+  console.log(j)
+  sum1 += j;
+  sum2 += j+1 ; //?why this(j+1) is used?
 }
-console.log(sum);
+console.log(sum1);
+console.log(sum2);
+console.log("")
+// !OR
+for (let j = 0; j <= 10; j++) {
+  sum3 += j;
+}
+console.log(sum3);
+console.log("")
 
 //todo read the above and try to understand
 
@@ -26,7 +38,7 @@ let num = [1, 2, 3, 4, 5];
 
 //* Conventional way
 for (let i = 0; i < num.length; i++) {
-  console.log(num[i]);
+  console.log(num[i]+1);
 }
 
 //*Modern way (forEach Loop)

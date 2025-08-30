@@ -1,6 +1,11 @@
 //! ARRAYS
 let mark_class_10 = [81, 91, 95, 91, 92];
 
+let arr = [1, 2.13, "avisekh", [], {}, "a"];
+for (let a of arr) {
+  console.log(typeof a);
+}
+
 console.log(mark_class_10.length); //? length of the array
 
 console.log(typeof mark_class_10);

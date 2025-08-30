@@ -9,20 +9,40 @@ let names = [
   "Gopal",
 ];
 
+//! for loop on array
+let num = [1, 2, 3, 4, 5];
+
+//* Conventional way
+for (let i = 0; i < num.length; i++) {
+  console.log(num[i] + 1);
+}
+
+//*Modern way (forEach Loop) when we want to do work for every element of array.
+num.forEach((element) => {
+  console.log(element + 1);
+});
+
 //* Instead of this..
 let newName1 = [];
 for (let i = 0; i < names.length; i++) {
   newName1.push(names[i] + " is a boy\n");
 }
-console.log(...newName1);
+console.log(newName1);
 
 //*we can do this...
-//! MAP FUNCTION
+//! MAP FUNCTION --> return a new array
 let newName2 = names.map((variables) => {
   return variables + " is a boy";
 });
 
-console.log(newName2.join("\n"));
+console.log(newName2);
+//todo DIFFERENEC BETWEEN --> forEach() doesn't return and Map() returns.
+
+//! REDUCE FUNCTION
+let sum = arr.reduce((sum, curr) => {
+  return (sum += curr);
+});
+console.log("Sum is: " + sum);
 
 //! FILTER FUNCTION
 //* EXMAPLE-1
@@ -30,6 +50,8 @@ console.log(
   names.filter((variables) => {
     return variables != "Avisekh";
   })
+
+  //names.filter((variables) => variables != "Avisekh";) //! --> work same. when we use {} we have to use keyword return.
 ); //?-- returns a array of name after filtering.
 
 //* EXMAPLE-2
@@ -51,9 +73,8 @@ let users = [
 
 //! FILTER FUNCTION
 const removeUser = (char) => {
-  let newUserArray = [];
-  newUserArray = users.filter((user) => {
-    return user.userName.charAt(0) != char;
+  let newUserArray = users.filter((element) => {
+    return element.userName.charAt[0] != char;
   });
   return newUserArray;
 };

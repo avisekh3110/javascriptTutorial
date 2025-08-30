@@ -8,6 +8,13 @@ b = Number.parseInt(b);
 //? and 12/2 = 6
 //* which should be 1.5
 
+// function
+// function statement
+
+// function expression
+
+//!hoisting concept
+
 //! STANDARD WAY
 function avg1(x, y) {
   let z;
@@ -40,3 +47,7 @@ console.log(avg2(a, b));
 >
   CLICK ME
 </button>;
+
+// IIFE
+
+// First class function --> func expression , parameter , args , return f1() from a function.
